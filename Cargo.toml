@@ -1,0 +1,10 @@
+[package]
+name = "ultimate_todo"
+version = "0.1.0"
+edition = "2024"
+
+[workspace]
+resolver = "2"
+members = [ "utd_android","utd_cli", "utd_lib", "utd_pc", "utd_server", "utd_web"]
+
+[dependencies]
