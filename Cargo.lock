@@ -3,10 +3,6 @@
 version = 4
 
 [[package]]
-name = "ultimate_todo"
-version = "0.1.0"
-
-[[package]]
 name = "utd_android"
 version = "0.1.0"
 

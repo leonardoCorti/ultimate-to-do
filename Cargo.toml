@@ -1,10 +1,7 @@
-[package]
-name = "ultimate_todo"
-version = "0.1.0"
-edition = "2024"
-
 [workspace]
 resolver = "2"
-members = [ "utd_android","utd_cli", "utd_lib", "utd_pc", "utd_server", "utd_web"]
+members = ["utd_cli", "utd_lib", "utd_server", "utd_android", "utd_pc", "utd_web"]
 
-[dependencies]
+default-members = ["utd_cli"]
+
+[workspace.dependencies]
