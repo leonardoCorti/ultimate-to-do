@@ -1,8 +1,8 @@
 # Ultimate To-Do Web application
 WiP!
 
-this project is very early, there is nothing done yet.
+## status 
+this project is in its very early stages, there is nothing done yet.
 
-the idea for this web app is to have a way to access your projects when you are on a computer where you can't or don't want to install a program.
-
-the idea is to make it confiurable so that it can interact with the utd-server hosted on the same machine or to be used standalone using browser local storage.
+## goal
+the goal of this web application is to providw access to your taks from any device where you can't or don't want to install a dedicated program. It also will be configurable to use a locally hosted Utd-server or operate standalone using browser local storage.

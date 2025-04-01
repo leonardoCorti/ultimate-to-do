@@ -1,6 +1,8 @@
 # Ultimate To-Do Lib
 WiP!
 
-this project is very early, there is nothing done yet.
+## status
+this project is in its very early stages, there is nothing done yet.
 
-The idea for this library is to have all the important code to this ecosystem in a central place so that a client or an integration can be developed without needing a specific app.
+## goal
+The library will serve as the core of the Ultimate To-Do ecosystem, centralizing all essential logic and functionality. This will enable clients and integrations to interact with the system without needing a specific application.

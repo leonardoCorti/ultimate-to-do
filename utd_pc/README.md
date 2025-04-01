@@ -1,6 +1,8 @@
 # Ultimate To-Do Gui for desktop
 WiP!
 
-this project is very early, there is nothing done yet.
+## status
+this project is in its very early stages, there is nothing done yet.
 
-The idea for this project is to be the desktop GUI to interact with the ecosystem.
+## goal
+The goal of this desktop application is to provide a graphical interface for interacting with the Ultimate To-Do ecosystem, offering a user-friendly alternative to the CLI.

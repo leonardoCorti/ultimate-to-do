@@ -1,16 +1,17 @@
 # Ultimate To-Do CLI
 WiP!
 
-this project is very early, there is nothing done yet.
+## status
+this project is in its very early stages, there is nothing done yet.
 
-The idea for this cli is to be the main way to interact with the system at least in the first phase of the development as it will be the easier to develop and modify.
-
-Now the target is to have a base impelmentation of a task-warrior style cli using as back-end a yaml file.
+## goal
+The CLI will be the core interface during the initial development phase, as it allows for faster iteration and modification. The first goal is to create a task management system similar to Taskwarrior, using a YAML file as the backend.
 
 ## example
+```bash
 utd add a very important task
 utd add a very important task -p 1 -P my_project -d 2025/01/03 -T a_tag -T another_tag 
 utd list 
 utd done 1
 utd edit 1
-
+```
