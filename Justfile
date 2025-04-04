@@ -21,7 +21,8 @@ _release_dir:
 
 # build all the crates for windows
 release_windows: _release_dir
-  just release x86_64-pc-windows-msvc utd_cli utd.exe
+  just release x86_64-pc-windows-msvc utd_cli utd_c.exe
+  just release x86_64-pc-windows-msvc utd_cli utd_t.exe
   just release x86_64-pc-windows-msvc utd_server utd_server.exe
   just release x86_64-pc-windows-msvc utd_pc utd_pc.exe
   # will add android apk bundle

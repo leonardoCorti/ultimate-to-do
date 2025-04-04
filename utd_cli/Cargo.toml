@@ -3,8 +3,16 @@ name = "utd_cli"
 version = "0.1.0"
 edition = "2024"
 
+default-run = "utd_c"
+
 [[bin]]
-name = "utd"
+name = "utd_c" # clap version
 path = "src/main.rs"
 
+[[bin]]
+name = "utd_t" # takswarrior version
+path = "src/main2.rs"
+
 [dependencies]
+anstyle = "1.0.10"
+clap = { version = "4.5.34", features = ["derive"] }
