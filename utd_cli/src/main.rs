@@ -4,8 +4,10 @@ mod utils;
 
 /// main cli structure
 #[derive(Parser, Debug)]
-#[command(name = "utd", about = "Ultimate to-do")]
-#[command(styles=utils::get_styles())]
+#[command(name = "utd",
+    about = "Ultimate to-do",
+    styles=utils::get_styles())
+    ]
 struct Cli {
     #[arg(short, long)]
     filters: Vec<String>,
@@ -24,8 +26,6 @@ enum Command {
         misc: Vec<String>,
     },
     List {
-        #[arg(short,long)]
-        ordering: bool,
         misc: Vec<String>,
     },
     Done {
@@ -48,6 +48,9 @@ enum Command {
 
 fn main() {
     let cli = Cli::parse();
-    println!("filters {:?}", cli.filters);
-    println!("filters {:?}", cli.command);
+    let filters = cli.filters;
+    let command = cli.command.unwrap_or(Command::List { misc: vec![] });
+
+    println!("filters {:?}", filters);
+    println!("filters {:?}", command);
 }
