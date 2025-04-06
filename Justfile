@@ -30,7 +30,8 @@ release_windows: _release_dir
 
 # build all the crates for linux
 release_linux: _release_dir
-  just release x86_64-unknown-linux-gnu utd_cli utd
+  just release x86_64-unknown-linux-gnu utd_cli utd_c
+  just release x86_64-unknown-linux-gnu utd_cli utd_t
   just release x86_64-unknown-linux-gnu utd_server utd_server
   just release x86_64-unknown-linux-gnu utd_pc utd_pc
   # will add android apk bundle
