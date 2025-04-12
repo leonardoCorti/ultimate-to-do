@@ -35,7 +35,16 @@ Synchronization is a key aspect of Utd - Ubiquitous Todo, featuring:
 
 - Optional Self-Hostable Server: Use your own infrastructure for complete data control
 - Single-File Database: Sync your tasks however you prefer
-- Integration with Existing Tools: Compatibility with CalDAV, Todoist, Taskwarrior, and potentially other task managers
+- Integration with Existing Tools: Compatibility with other task managers
+
+#### planned synchronization options
+- todoist
+- taskwarrior
+- WebDav
+- nextCloud
+- todo.txt
+- iCalendar
+- markdown file
 
 ## Roadmap
 1. **Core library and CLI** - develop a minimal cli using a YAML-based backend.
