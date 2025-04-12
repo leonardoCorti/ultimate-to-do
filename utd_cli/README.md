@@ -1,4 +1,4 @@
-# Ultimate To-Do CLI
+# Utd - Ubiquitous To-Do CLI
 WiP!
 
 ## status

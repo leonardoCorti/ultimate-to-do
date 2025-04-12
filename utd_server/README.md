@@ -1,4 +1,4 @@
-# Ultimate To-Do server
+# Utd - Ubiquitous To-Do server
 WiP!
 
 ## status

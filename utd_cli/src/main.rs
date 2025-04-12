@@ -5,7 +5,7 @@ mod utils;
 /// main cli structure
 #[derive(Parser, Debug)]
 #[command(name = "utd",
-    about = "Ultimate to-do",
+    about = "Utd - Ubiquitous to-do",
     styles=utils::get_styles())
     ]
 struct Cli {

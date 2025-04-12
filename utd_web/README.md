@@ -1,4 +1,4 @@
-# Ultimate To-Do Web application
+# Utd - Ubiquitous To-Do Web application
 WiP!
 
 ## status 

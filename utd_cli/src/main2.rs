@@ -2,7 +2,7 @@ use clap::Parser;
 
 // main cli structure
 #[derive(Parser, Debug)]
-#[command( name= "utd", about = "Ultimate to-do")]
+#[command( name= "utd", about = "Utd - Ubiquitous to-do")]
 struct Cli{
     misc: Vec<String>,
 }

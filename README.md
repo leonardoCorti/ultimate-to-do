@@ -1,16 +1,16 @@
-# Ultimate Todo
+# Utd - Ubiquitous Todo
 
 WiP!
 
-Ultimate Todo is an open-source, self-hostable task manager that aims to fill the gap for an open source to-do list application that's easy to sync with other platforms and services while providing uniform interfaces across various platforms. Inspired by Todoist and Taskwarrior, this project strives to offer a fast, ubiquitous, and easily synchronizable task management solution without the limitations of proprietary services.
+Utd - Ubiquitous Todo is an open-source, self-hostable task manager that aims to fill the gap for an open source to-do list application that's easy to sync with other platforms and services while providing uniform interfaces across various platforms. Inspired by Todoist and Taskwarrior, this project strives to offer a fast, ubiquitous, and easily synchronizable task management solution without the limitations of proprietary services.
 
 ## current status
 There is nothing ready. I just started, this readme is just a roadmap and declaration of what this project aims to be.
 
 ## Features
 
-### Ubiquitous
-Ultimate Todo is designed to be accessible from any device, ensuring maximum reachability. The planned platforms include:
+### Utd - Ubiquitous
+Utd - Ubiquitous Todo is designed to be accessible from any device, ensuring maximum reachability. The planned platforms include:
 
 - Library to implement your own client
 - CLI Program
@@ -19,7 +19,7 @@ Ultimate Todo is designed to be accessible from any device, ensuring maximum rea
 - Web Application
 
 ### Fast
-To ensure the best performance and efficiency, Ultimate Todo is built with:
+To ensure the best performance and efficiency, Utd - Ubiquitous Todo is built with:
 
 - Rust: A fast, memory-safe programming language
 - Local-First Approach: Works offline by default
@@ -31,7 +31,7 @@ To ensure the best performance and efficiency, Ultimate Todo is built with:
 - simple interface with sensible defaults with powerful configuration options
 
 ### Easily Synchronizable
-Synchronization is a key aspect of Ultimate Todo, featuring:
+Synchronization is a key aspect of Utd - Ubiquitous Todo, featuring:
 
 - Optional Self-Hostable Server: Use your own infrastructure for complete data control
 - Single-File Database: Sync your tasks however you prefer
