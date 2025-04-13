@@ -1,3 +1,5 @@
+set dotenv-load
+
 RELEASE_DIR := "release"
 
 alias r := run
@@ -25,8 +27,8 @@ release_windows: _release_dir
   just release x86_64-pc-windows-msvc utd_cli utd_t.exe
   just release x86_64-pc-windows-msvc utd_server utd_server.exe
   just release x86_64-pc-windows-msvc utd_pc utd_pc.exe
-  # will add android apk bundle
-  # will add web bundle
+  just release_web
+  just release_android
 
 # build all the crates for linux
 release_linux: _release_dir
@@ -34,13 +36,31 @@ release_linux: _release_dir
   just release x86_64-unknown-linux-gnu utd_cli utd_t
   just release x86_64-unknown-linux-gnu utd_server utd_server
   just release x86_64-unknown-linux-gnu utd_pc utd_pc
-  # will add android apk bundle
-  # will add web bundle
+  just release_web
+  just release_android
 
 # general release recipe
 release platform project binary_name: _release_dir
   cargo build --release --package {{project}} --target {{platform}}
   cp target/{{platform}}/release/{{binary_name}} {{RELEASE_DIR}}
+
+# build utd_web
+release_web: _release_dir
+  #!/bin/env bash
+  cd utd_web
+  wasm-pack build --release --target web
+  cd ..
+  mkdir -p {{RELEASE_DIR}}/utd_web
+  cp utd_web/index.html {{RELEASE_DIR}}/utd_web/index.html
+  cp -r utd_web/pkg {{RELEASE_DIR}}/utd_web/pkg
+  
+# build utd_android
+release_android: _release_dir
+  #!/bin/env bash
+  cd utd_android
+  x build -r --platform android --arch arm64 --format apk
+  cd ..
+  cp target/x/release/android/utd_android.apk {{RELEASE_DIR}}
 
 # build all the crates for linux and windows
 release_all: release_linux release_windows

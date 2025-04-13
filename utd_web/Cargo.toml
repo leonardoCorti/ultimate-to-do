@@ -3,4 +3,14 @@ name = "utd_web"
 version = "0.1.0"
 edition = "2024"
 
+[lib]
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+
 [dependencies]
+getrandom = { version = "0.2.2", features = ["js"] }
+slint = "1.10.0"
+wasm-bindgen = "0.2.100"
+
+[build-dependencies]
+slint-build = "1.10.0"

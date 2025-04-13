@@ -1,7 +1,7 @@
-#![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
-
 slint::include_modules!();
 
+#[cfg_attr(target_arch = "wasm32",
+           wasm_bindgen::prelude::wasm_bindgen(start))]
 fn main() {
     let ui = AppWindow::new().unwrap();
 

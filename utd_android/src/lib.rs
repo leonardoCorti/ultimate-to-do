@@ -1,8 +1,7 @@
-#![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
-
 slint::include_modules!();
 
-fn main() {
+#[unsafe(no_mangle)]
+fn android_main(_app: slint::android::AndroidApp) {
     let ui = AppWindow::new().unwrap();
 
     ui.on_request_increase_value({

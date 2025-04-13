@@ -3,4 +3,12 @@ name = "utd_android"
 version = "0.1.0"
 edition = "2024"
 
+[lib]
+crate-type = ["cdylib"]
+path = "src/lib.rs"
+
 [dependencies]
+slint = { version = "1.8", features = ["backend-android-activity-06"] }
+
+[build-dependencies]
+slint-build = "1.8"
