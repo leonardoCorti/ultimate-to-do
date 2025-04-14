@@ -16,6 +16,7 @@ run:
 clean:
   rm -r {{RELEASE_DIR}}
   cargo clean
+  rm -r utd_web/pkg
 
 # creates the release directory
 _release_dir:
