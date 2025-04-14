@@ -68,6 +68,12 @@ release_python: _release_dir
 # build all the crates for linux and windows
 release_all: release_linux release_windows
 
+# compress with tar.xz files
+compress_release: _release_dir
+  #!/bin/env bash
+  cd {{RELEASE_DIR}}
+  for el in *; do tar cvf "${el}.tar.xz" -I 'xz -9e' "$el" && rm -r "$el"; done
+
 # test project
 test project:
   cargo test --package {{project}}
