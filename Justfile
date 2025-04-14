@@ -29,6 +29,7 @@ release_windows: _release_dir
   just release x86_64-pc-windows-msvc utd_pc utd_pc.exe
   just release_web
   just release_android
+  just release_python
 
 # build all the crates for linux
 release_linux: _release_dir
@@ -38,6 +39,7 @@ release_linux: _release_dir
   just release x86_64-unknown-linux-gnu utd_pc utd_pc
   just release_web
   just release_android
+  just release_python
 
 # general release recipe
 release platform project binary_name: _release_dir
@@ -61,6 +63,11 @@ release_android: _release_dir
   x build -r --platform android --arch arm64 --format apk
   cd ..
   cp target/x/release/android/utd_android.apk {{RELEASE_DIR}}
+
+# build python library
+release_python: _release_dir
+  maturin build -m utd-lib-python/Cargo.toml
+  cp target/wheels/* release
 
 # build all the crates for linux and windows
 release_all: release_linux release_windows
