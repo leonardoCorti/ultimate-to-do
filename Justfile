@@ -27,8 +27,6 @@ release_windows: _release_dir
   just release x86_64-pc-windows-msvc utd_cli utd_t.exe
   just release x86_64-pc-windows-msvc utd_server utd_server.exe
   just release x86_64-pc-windows-msvc utd_pc utd_pc.exe
-  just release_web
-  just release_android
   just release_python
 
 # build all the crates for linux
@@ -37,8 +35,6 @@ release_linux: _release_dir
   just release x86_64-unknown-linux-gnu utd_cli utd_t
   just release x86_64-unknown-linux-gnu utd_server utd_server
   just release x86_64-unknown-linux-gnu utd_pc utd_pc
-  just release_web
-  just release_android
   just release_python
 
 # general release recipe
