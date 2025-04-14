@@ -1,6 +1,6 @@
 [workspace]
 resolver = "2"
-members = ["utd_cli", "utd_lib", "utd_server", "utd_android", "utd_pc", "utd_web"]
+members = ["utd_cli", "utd_lib", "utd_server", "utd_android", "utd_pc", "utd_web", "utd-lib-python"]
 
 default-members = ["utd_cli"]
 
