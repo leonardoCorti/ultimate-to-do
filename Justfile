@@ -74,6 +74,7 @@ compress_release: _release_dir
   #!/bin/env bash
   cd {{RELEASE_DIR}}
   for el in *; do tar cvf "${el}.tar.xz" -I 'xz -9e' "$el" && rm -r "$el"; done
+  for el in *; do sha256sum "$el" > "$el.sha256" ; done
 
 # test project
 test project:
